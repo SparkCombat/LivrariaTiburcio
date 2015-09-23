@@ -3,9 +3,12 @@ package br.com.fiap.livraria.bean;
 import java.util.ArrayList;
 import java.util.List;
 
+import javax.faces.bean.ManagedBean;
+
 import br.com.fiap.livraria.dao.EstoqueDAO;
 import br.com.fiap.livraria.to.Estoque;
 
+@ManagedBean
 public class EstoqueBean {
 	
 	public EstoqueBean(){

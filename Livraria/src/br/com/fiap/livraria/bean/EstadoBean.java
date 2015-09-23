@@ -3,9 +3,12 @@ package br.com.fiap.livraria.bean;
 import java.util.ArrayList;
 import java.util.List;
 
+import javax.faces.bean.ManagedBean;
+
 import br.com.fiap.livraria.dao.EstadoDAO;
 import br.com.fiap.livraria.to.Estado;
 
+@ManagedBean
 public class EstadoBean {
 	
 	public EstadoBean(){}

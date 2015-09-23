@@ -3,9 +3,12 @@ package br.com.fiap.livraria.bean;
 import java.util.ArrayList;
 import java.util.List;
 
+import javax.faces.bean.ManagedBean;
+
 import br.com.fiap.livraria.dao.TelefoneDAO;
 import br.com.fiap.livraria.to.Telefone;
 
+@ManagedBean
 public class TelefoneBean {
 	
 	public TelefoneBean(){}

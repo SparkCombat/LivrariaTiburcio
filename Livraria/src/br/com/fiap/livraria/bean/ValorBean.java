@@ -3,9 +3,12 @@ package br.com.fiap.livraria.bean;
 import java.util.ArrayList;
 import java.util.List;
 
+import javax.faces.bean.ManagedBean;
+
 import br.com.fiap.livraria.dao.ValorDAO;
 import br.com.fiap.livraria.to.Valor;
 
+@ManagedBean
 public class ValorBean {
 	
 	public ValorBean(){}

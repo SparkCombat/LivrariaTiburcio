@@ -3,9 +3,12 @@ package br.com.fiap.livraria.bean;
 import java.util.ArrayList;
 import java.util.List;
 
+import javax.faces.bean.ManagedBean;
+
 import br.com.fiap.livraria.dao.CategoriaLivroDAO;
 import br.com.fiap.livraria.to.CategoriaLivro;
 
+@ManagedBean
 public class CategoriaLivroBean {
 	
 	public CategoriaLivroBean(){}
