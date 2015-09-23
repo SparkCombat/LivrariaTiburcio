@@ -1,12 +1,11 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-	pageEncoding="ISO-8859-1"%>
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<html>
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:h="http://java.sun.com/jsf/html" xmlns:f="http://java.sun.com/jsf/core" xmlns:ui="http://java.sun.com/jsf/facelets">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Buscar Categoria</title>
-<link rel="stylesheet" href="livraria.css">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Insert title here</title>
 </head>
+
 <body>
 
 	<div id="footer">
@@ -45,21 +44,21 @@
 					<li><a href="buscarEditora.jsp">Buscar</a></li>
 				</ul></li>
 				
-			<li><a href="#">Usu·rios</a>
+			<li><a href="#">Usu√°rios</a>
 				<ul>
 					<li><a href="cadUsuario.jsp">Cadastrar</a></li>
 					<li><a href="editarUsuario.jsp">Editar</a></li>
 					<li><a href="excluirUsuario.jsp">Excluir</a></li>
 					<li><a href="buscarUsuario.jsp">Buscar</a></li>
 				</ul></li>
-				<li><a href="historico.jsp">HistÛrico</a></li>
+				<li><a href="historico.jsp">Hist√≥rico</a></li>
 		</ul>
 
 
 	</div>
 
 	<div id="nav2">
-		TÌtulo: <input type="text" name="txtTitulo" size="10" /><br>
+		T√≠tulo: <input type="text" name="txtTitulo" size="10" /><br>
 		Autor: <input type="text" name="txtAutor" size="10" /><br>
 		Editora: <input type="text" name="txtEditora" size="10" /><br> <br>
 		<input type="submit" value="Buscar" />
@@ -69,14 +68,15 @@
 		style="width: 42px; height: 42px; border: 0" title="Logout"></a>
 	<a href="carrinho.jsp" id="h"><img src="/Nac_Livraria/imagens/carrinho.jpg"
 		style="width: 42px; height: 42px; border: 0" title="Carrinho"></a>
-	<a href="homeadm.jsp" id="h"><img src="/Nac_Livraria/imagens/home.png"
+	<a href="home.jsp" id="h"><img src="/Nac_Livraria/imagens/homeadm.png"
 		style="width: 42px; height: 42px; border: 0"></a>
 
 	<br>
 
 	<br />
 	<div id="section">
-		<form action="exccategoria" method="post">
+		<form action="buseditora" method="post">
+
 			<table>
 				<tr>
 					<td>Id:</td>
@@ -85,16 +85,57 @@
 			</table>
 			<table>
 				<tr>
-					<td>Nome:</td>
-					<td><input type="text" name="txtNome" size="80" /></td>
+					<td>Raz√£o Social:</td>
+					<td><input type="text" name="txtRazao" size="80" /></td>
 				</tr>
+				<tr>
+					<td>CNPJ:</td>
+					<td><input type="text" name="txtCnpj" size="30" /></td>
+				</tr>
+				<tr>
+					<td>Endere√ßo:</td>
+					<td><input type="text" name="txtEndereco" size="80" /></td>
+				</tr>
+				<tr>
+					<td>N√∫mero:</td>
+					<td><input type="text" name="txtNro" size="10" /></td>
+				</tr>
+				<tr>
+					<td>Complemento:</td>
+					<td><input type="text" name="txtComplemento" size="30" /></td>
+				</tr>
+				<tr>
+					<td>Bairro:</td>
+					<td><input type="text" name="txtBairro" size="30" /></td>
+				</tr>
+				<tr>
+					<td>CEP:</td>
+					<td><input type="text" name="txtCep" size="30" /></td>
+				</tr>
+				<tr>
+					<td>Cidade:</td>
+					<td><input type="text" name="txtCidade" size="80" /></td>
+				</tr>
+				<tr>
+					<td>Estado:</td>
+					<td><input type="text" name="txtEstado" size="10" /></td>
+				</tr>
+				<tr>
+					<td>Telefone:</td>
+					<td><input type="text" name="txtTelefone" size="30" /></td>
+				</tr>
+				<tr>
+					<td>Email:</td>
+					<td><input type="text" name="txtEmail" size="80" /></td>
+				</tr>
+
 
 
 			</table>
 		</form>
 	</div>
 
-	<div id="footer">Copyright © Pedro, Danilo, Paulo</div>
+	<div id="footer">Copyright ¬© Pedro, Danilo, Paulo</div>
 
 </body>
 </html>
