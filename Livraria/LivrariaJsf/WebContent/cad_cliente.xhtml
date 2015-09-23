@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:h="http://java.sun.com/jsf/html" xmlns:f="http://java.sun.com/jsf/core" xmlns:ui="http://java.sun.com/jsf/facelets">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Insert title here</title>
+</head>
+
+<body>
+	<h:form>
+		<h3>Cadastro Cliente</h3>
+		<ol>
+			<h:inputHidden value="#{clienteBean.cliente.idCliente}" />
+			<li>Nome <h:inputText value="#{clienteBean.cliente.nome}"></h:inputText></li>
+			<li>CPF <h:inputText value="#{clienteBean.cliente.cpf}" /></li>
+			<li>Email <h:inputText value="#{clienteBean.cliente.email}" /></li>
+			<li>Nascimento<h:inputText value="#{clienteBean.cliente.nascimento}" ><f:convertDateTime pattern="dd/MM/yyyy" /></h:inputText></li>	
+		</ol>
+		<h:commandButton value="Gravar" action="#{clienteBean.gravar}"/>
+	</h:form>
+</body>
+</html>

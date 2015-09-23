@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:h="http://java.sun.com/jsf/html" xmlns:ui="http://java.sun.com/jsf/facelets">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Insert title here</title>
+</head>
+
+<body>
+	<h:form>
+		<h3>Cadastro Livro</h3>
+		<ol>
+			<li>Nome <h:inputText value="#{livroBean.livro.nome}" /></li>
+			<li>origem <h:inputText value="#{livroBean.livro.origem}" /></li>
+			<li>Idioma <h:inputText value="#{livroBean.livro.idioma}" /></li>
+			<li>ISBN <h:inputText value="#{livroBean.livro.isbn}" /></li>
+			<li>Altura <h:inputText value="#{livroBean.livro.altura}" /></li>
+			<li>Largura <h:inputText value="#{livroBean.livro.largura}" /></li>
+			<li>Comprimento <h:inputText value="#{livroBean.livro.comprimento}" /></li>
+			<li>Peso <h:inputText value="#{livroBean.livro.peso}" /></li>
+			<li>Pagina <h:inputText value="#{livroBean.livro.pagina}" /></li>
+			<li>Ano <h:inputText value="#{livroBean.livro.ano}" /></li>	
+		</ol>
+		<h:commandButton value="Inserir" action="#{livroBean.gravar}"/>
+	</h:form>
+</body>
+</html>
