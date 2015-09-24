@@ -1,12 +1,11 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-	pageEncoding="ISO-8859-1"%>
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<html>
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:h="http://java.sun.com/jsf/html" xmlns:f="http://java.sun.com/jsf/core" xmlns:ui="http://java.sun.com/jsf/facelets">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Exclusão de Autor</title>
-<link rel="stylesheet" href="livraria.css">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Insert title here</title>
 </head>
+
 <body>
 
 	<div id="footer">
@@ -14,7 +13,7 @@
 	</div>
 
 	<div id="nav">
-				<ul>
+		<ul>
 			<li><a href="#">Livros</a>
 				<ul>
 					<li><a href="cadLivro.jsp">Cadastrar</a></li>
@@ -45,39 +44,38 @@
 					<li><a href="buscarEditora.jsp">Buscar</a></li>
 				</ul></li>
 				
-			<li><a href="#">Usuários</a>
+			<li><a href="#">UsuÃ¡rios</a>
 				<ul>
 					<li><a href="cadUsuario.jsp">Cadastrar</a></li>
 					<li><a href="editarUsuario.jsp">Editar</a></li>
 					<li><a href="excluirUsuario.jsp">Excluir</a></li>
 					<li><a href="buscarUsuario.jsp">Buscar</a></li>
 				</ul></li>
-				<li><a href="historico.jsp">Histórico</a></li>
+				<li><a href="historico.jsp">HistÃ³rico</a></li>
 		</ul>
+
 
 	</div>
 
 	<div id="nav2">
-		Título: <input type="text" name="txtTitulo" size="10" /><br>
+		TÃ­tulo: <input type="text" name="txtTitulo" size="10" /><br>
 		Autor: <input type="text" name="txtAutor" size="10" /><br>
 		Editora: <input type="text" name="txtEditora" size="10" /><br> <br>
 		<input type="submit" value="Buscar" />
 	</div>
 
-	<a href="#" id="h"><img
-		src="/Nac_Livraria/imagens/logout.jpg"
+	<a href="#" id="h"><img src="/Nac_Livraria/imagens/logout.jpg"
 		style="width: 42px; height: 42px; border: 0" title="Logout"></a>
 	<a href="carrinho.jsp" id="h"><img src="/Nac_Livraria/imagens/carrinho.jpg"
 		style="width: 42px; height: 42px; border: 0" title="Carrinho"></a>
-	<a href="homeadm.jsp" id="h"><img src="/Nac_Livraria/imagens/home.png"
+	<a href="home.jsp" id="h"><img src="/Nac_Livraria/imagens/homeadm.png"
 		style="width: 42px; height: 42px; border: 0"></a>
 
 	<br>
 
 	<br />
-	<div id="section">
-		<form action="excautor" method="post">
-
+	<div>
+		<form action="excusu" method="post">
 			<table>
 				<tr>
 					<td>Id:</td>
@@ -87,61 +85,48 @@
 			<table>
 				<tr>
 					<td>Nome:</td>
-					<td><input type="text" name="txtNome" size="80" /></td>
-				</tr>
-					<tr>
-					<td>Data de Nascimento:</td>
-					<td><input type="text" name="txtDataNasc" size="23" /></td>
+					<td><input type="text" name="txtNome" size="80"/></td>
 				</tr>
 				<tr>
-					<td>Nacionalidade:</td>
-					<td><input type="text" name="txtOrigem" size="23" /></td>
+					<td>CPF:</td>
+					<td><input type="text" name="txtCpf" size="23"/></td>
 				</tr>
 				<tr>
-					<td>Início Atividade:</td>
-					<td><input type="text" name="txtInicAtv" size="23" /></td>
+					<td>Data de Nascimento: </td>
+					<td><input type="text" name="txtNasc" size="23"/></td>
 				</tr>
 				<tr>
-					<td>Naturalidade:</td>
-					<td><input type="text" name="txtNaturalidade" size="50" /></td>
+					<td>Sexo: </td>
+					<td><input type="radio" name="sex" value="fem" checked>Feminino
+					<input type="radio" name="sex" value="masc">Masculino</td>
 				</tr>
 				<tr>
-					<td>Ocupação:</td>
-					<td><input type="text" name="txtOcupacao" size="80" /></td>
+					<td>Telefone: </td>
+					<td><input type="text" name="txtTel" size="23"/></td>
 				</tr>
 				<tr>
-					<td>Movimento:</td>
-					<td><input type="text" name="txtMovimento" size="80" /></td>
+					<td>Email: </td>
+					<td><input type="text" name="txtEmail" size="80"/></td>
 				</tr>
 				<tr>
-					<td>Influência:</td>
-					<td><input type="text" name="txtInfluencia" size="50" /></td>
-				</tr>
-				<tr>
-					<td>Religião:</td>
-					<td><input type="text" name="txtReligiao" size="50" /></td>
-				</tr>
-				<tr>
-					<td>Etnia:</td>
-					<td><input type="text" name="txtEtnia" size="50" /></td>
-				</tr>
-				<tr>
-					<td>Fim Atividade:</td>
-					<td><input type="text" name="txtFimAtv" size="23" /></td>
-				</tr>
+					<td>Tipo usuÃ¡rio:</td>
+					<td><select>
+							<option value="x">Selecione uma opÃ§Ã£o</option>
+							<option value="y">Administrador</option>
+							<option value="z">UsuÃ¡rio</option>
+					</select> </td>
 
-				<tr>
 				</tr>
+				<tr> </tr>
+				<tr> </tr>
 				<tr>
-				</tr>
-				<tr>
-					<td colspan="2" style="text-align: right;"><input type="image" src="/Nac_Livraria/imagens/excluir.jpg" title="Editar Autor"></td>
+					<td colspan="2" style="text-align: right;"><input type="image" src="/Nac_Livraria/imagens/excluir.jpg" title="excluir"></td>
 				</tr>
 			</table>
 		</form>
 	</div>
 
-	<div id="footer">Copyright © Pedro, Danilo, Paulo</div>
+	<div id="footer">Copyright Â© Pedro, Danilo, Paulo</div>
 
 </body>
 </html>

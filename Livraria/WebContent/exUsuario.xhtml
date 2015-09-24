@@ -1,12 +1,11 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-	pageEncoding="ISO-8859-1"%>
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<html>
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:h="http://java.sun.com/jsf/html" xmlns:f="http://java.sun.com/jsf/core" xmlns:ui="http://java.sun.com/jsf/facelets">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Editar usu·rio</title>
-<link rel="stylesheet" href="livraria.css">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Insert title here</title>
 </head>
+
 <body>
 
 	<div id="footer">
@@ -15,20 +14,20 @@
 
 	<div id="nav">
 		<ul>
-			<li><a href="#">Usu·rios</a>
+			<li><a href="#">Usu√°rios</a>
 				<ul>
 					<li><a href="edUsuario.jsp">Editar</a></li>
 					<li><a href="exUsuario.jsp">Excluir</a></li>
 					<li><a href="buUsuario.jsp">Buscar</a></li>
 				</ul></li>
-				<li><a href="historico.jsp">HistÛrico</a></li>
+				<li><a href="historico.jsp">Hist√≥rico</a></li>
 		</ul>
 
 
 	</div>
 
 	<div id="nav2">
-		TÌtulo: <input type="text" name="txtTitulo" size="10" /><br>
+		T√≠tulo: <input type="text" name="txtTitulo" size="10" /><br>
 		Autor: <input type="text" name="txtAutor" size="10" /><br>
 		Editora: <input type="text" name="txtEditora" size="10" /><br> <br>
 		<input type="submit" value="Buscar" />
@@ -45,7 +44,7 @@
 
 	<br />
 	<div>
-		<form action="ediusu" method="post">
+		<form action="exusu" method="post">
 			<table>
 				<tr>
 					<td>Nome:</td>
@@ -73,32 +72,24 @@
 					<td><input type="text" name="txtEmail" size="80"/></td>
 				</tr>
 				<tr>
-					<td>Tipo usu·rio:</td>
+					<td>Tipo usu√°rio:</td>
 					<td><select>
-							<option value="x">Selecione uma opÁ„o</option>
+							<option value="x">Selecione uma op√ß√£o</option>
 							<option value="y">Administrador</option>
-							<option value="z">Usu·rio</option>
+							<option value="z">Usu√°rio</option>
 					</select> </td>
 
 				</tr>
-				<tr>
-					<td>Senha:</td>
-					<td><input type="password" name="txtSenha" size="23"/></td>
-				</tr>
-				<tr>
-					<td>Confirme:</td>
-					<td><input type="password" name="txtConfirme" size="23"/></td>
-				</tr>
 				<tr> </tr>
 				<tr> </tr>
 				<tr>
-					<td colspan="2" style="text-align: right;"><input type="image" src="/Nac_Livraria/imagens/editar.jpg" title="editar"></td>
+					<td colspan="2" style="text-align: right;"><input type="image" src="/Nac_Livraria/imagens/excluir.jpg" title="excluir"></td>
 				</tr>
 			</table>
 		</form>
 	</div>
 
-	<div id="footer">Copyright © Pedro, Danilo, Paulo</div>
+	<div id="footer">Copyright ¬© Pedro, Danilo, Paulo</div>
 
 </body>
 </html>
